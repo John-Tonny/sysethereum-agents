@@ -8,6 +8,7 @@ import com.thetransactioncompany.jsonrpc2.JSONRPC2Response;
 import com.thetransactioncompany.jsonrpc2.client.JSONRPC2Session;
 import com.thetransactioncompany.jsonrpc2.client.JSONRPC2SessionException;
 import lombok.extern.slf4j.Slf4j;
+import net.minidev.json.JSONArray;
 import net.minidev.json.JSONObject;
 import org.springframework.stereotype.Service;
 import org.sysethereum.agents.constants.SystemProperties;
@@ -44,8 +45,12 @@ public class SyscoinRPCClient {
             Object r1 = response.getResult();
             if (r1 instanceof String) {
                 result.put("result", r1.toString());
-            } else {
+            } else if(r1 instanceof JSONArray) {
+                result.put("result", r1);
+            } else if(r1 instanceof  JSONObject)  {
                 result = (JSONObject) response.getResult();
+            } else {
+                result.put("result", r1);
             }
         } else {
             throw new JSONRPC2SessionException(response.getError().getMessage());
