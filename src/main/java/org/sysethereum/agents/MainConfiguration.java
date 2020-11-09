@@ -87,8 +87,8 @@ public class MainConfiguration {
 
     @Bean
     public Web3jService mainWeb3jService(SystemProperties config) {
-        // String url = config.getStringProperty("geth.rpc.url_and_port");
-        String url = config.getStringProperty("secondary.url");
+        String url = config.getStringProperty("geth.rpc.url_and_port");
+        // String url = config.getStringProperty("secondary.url");
         logger.debug("mainWeb3jService: Set to: {}", url);
         return new HttpService(url);
     }

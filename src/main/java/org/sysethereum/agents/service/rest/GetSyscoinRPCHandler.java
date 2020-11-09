@@ -34,8 +34,22 @@ public class GetSyscoinRPCHandler extends CommonHttpHandler {
         try {
             String method = params.get("method");
             params.remove("method");
-            ArrayList<Object> paramList = new ArrayList<>(params.values());
-            response = syscoinRPCClient.makeCoreCall(method, paramList);
+            if (method.equals("signrawtransactionwithkey")) {
+                String hexstring = params.get("hexstring");
+                String privkey = params.get("privkeys");
+                String[] split = privkey.split(",");
+                ArrayList<String> privkeList = new ArrayList<String>();
+                for (String s : split) {
+                    privkeList.add(s);
+                }
+                ArrayList<Object> paramList = new ArrayList<>();
+                paramList.add(hexstring);
+                paramList.add(privkeList);
+                response = syscoinRPCClient.makeCoreCall(method, paramList);
+            } else {
+                ArrayList<Object> paramList = new ArrayList<>(params.values());
+                response = syscoinRPCClient.makeCoreCall(method, paramList);
+            }
         } catch (Exception e) {
             response = gson.toJson(new RestError(e.toString()));
         }

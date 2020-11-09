@@ -1,0 +1,462 @@
+22:27:19.328 [main] INFO  org.springframework.core.KotlinDetector - Kotlin reflection implementation not found at runtime, related features won't be available.
+22:27:20.117 [main] INFO  SystemPropertiesFactory - Config (yes): user properties from -Dsysethereum.agents.conf.file file '/mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf'
+22:27:20.138 [main] DEBUG SystemProperties - Config trace:     # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 39
+agent {
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 39
+    mailer {
+        # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 39
+        enabled=false
+    }
+}
+    # system properties
+awt {
+    # system properties
+    toolkit="sun.awt.X11.XToolkit"
+}
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 8
+constants=integration
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 30
+data {
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 30
+    directory="/mnt/ethereum/vcl-eth"
+}
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 70
+deposited {
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 70
+    funds {
+        # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 70
+        limit=3000000000000000000
+    }
+}
+    # system properties
+file {
+    # system properties
+    encoding=UTF-8
+    # system properties
+    separator="/"
+}
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 13-16
+gas {
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 16
+    limit=5000000
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 13-14
+    price {
+        # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 14
+        max=20000000000
+        # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 13
+        min=1000000000
+    }
+}
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 20-21
+general {
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 20-21
+    purpose {
+        # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 20-21
+        and {
+            # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 20-21
+            send {
+                # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 20-21
+                superblocks {
+                    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 20
+                    address="0x602432cb3aeb6fdb53ab6bb57322f027db9c4853"
+                    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 21
+                    unlockpw="111111"
+                }
+            }
+        }
+    }
+}
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 64
+geth {
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 64
+    rpc {
+        # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 64
+        "url_and_port"="http://52.82.14.63:8745/"
+    }
+}
+    # system properties
+java {
+    # system properties
+    awt {
+        # system properties
+        graphicsenv="sun.awt.X11GraphicsEnvironment"
+        # system properties
+        printerjob="sun.print.PSPrinterJob"
+    }
+    # system properties
+    class {
+        # system properties
+        path="./target/sysethereum-agents-1.0-jar-with-dependencies.jar"
+        # system properties
+        version="55.0"
+    }
+    # system properties
+    home="/opt/jdk-11.0.8"
+    # system properties
+    io {
+        # system properties
+        tmpdir="/tmp"
+    }
+    # system properties
+    library {
+        # system properties
+        path="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"
+    }
+    # system properties
+    runtime {
+        # system properties
+        name="Java(TM) SE Runtime Environment"
+        # system properties
+        version="11.0.8+10-LTS"
+    }
+    # system properties
+    specification {
+        # system properties
+        name="Java Platform API Specification"
+        # system properties
+        vendor="Oracle Corporation"
+        # system properties
+        version="11"
+    }
+    # system properties
+    vendor {
+        # system properties
+        url {
+            # system properties
+            bug="https://bugreport.java.com/bugreport/"
+        }
+        # system properties
+        version="18.9"
+    }
+    # system properties
+    version {
+        # system properties
+        date="2020-07-14"
+    }
+    # system properties
+    vm {
+        # system properties
+        compressedOopsMode="32-bit"
+        # system properties
+        info="mixed mode"
+        # system properties
+        name="Java HotSpot(TM) 64-Bit Server VM"
+        # system properties
+        specification {
+            # system properties
+            name="Java Virtual Machine Specification"
+            # system properties
+            vendor="Oracle Corporation"
+            # system properties
+            version="11"
+        }
+        # system properties
+        vendor="Oracle Corporation"
+        # system properties
+        version="11.0.8+10-LTS"
+    }
+}
+    # system properties
+jdk {
+    # system properties
+    debug=release
+}
+    # system properties
+line {
+    # system properties
+    separator="\n"
+}
+    # system properties
+os {
+    # system properties
+    arch=amd64
+    # system properties
+    name=Linux
+    # system properties
+    version="5.4.0-52-generic"
+}
+    # system properties
+path {
+    # system properties
+    separator=":"
+}
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 62
+secondary {
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 62
+    url="https://rinkeby.infura.io/v3/4889fed1249f42d1bb6b66c7be01f71b"
+}
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 73-75
+server {
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 73
+    enabled=true
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 74-75
+    ssl {
+        # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 74
+        key-store="/mnt/ethereum/eth-contract/sysethereum-agents/key.jks"
+        # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 75
+        key-store-password=111111
+    }
+}
+    # system properties
+sun {
+    # system properties
+    arch {
+        # system properties
+        data {
+            # system properties
+            model="64"
+        }
+    }
+    # system properties
+    boot {
+        # system properties
+        library {
+            # system properties
+            path="/opt/jdk-11.0.8/lib"
+        }
+    }
+    # system properties
+    cpu {
+        # system properties
+        endian=little
+        # system properties
+        isalist=""
+    }
+    # system properties
+    io {
+        # system properties
+        unicode {
+            # system properties
+            encoding=UnicodeLittle
+        }
+    }
+    # system properties
+    java {
+        # system properties
+        command="./target/sysethereum-agents-1.0-jar-with-dependencies.jar"
+        # system properties
+        launcher="SUN_STANDARD"
+    }
+    # system properties
+    jnu {
+        # system properties
+        encoding=UTF-8
+    }
+    # system properties
+    management {
+        # system properties
+        compiler="HotSpot 64-Bit Tiered Compilers"
+    }
+    # system properties
+    os {
+        # system properties
+        patch {
+            # system properties
+            level=unknown
+        }
+    }
+}
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 2-26
+syscoin {
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 2-26
+    superblock {
+        # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 5-26
+        challenger {
+            # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 25
+            address="0x602432cb3aeb6fdb53ab6bb57322f027db9c4853"
+            # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 5
+            enabled=true
+            # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 26
+            unlockpw="111111"
+        }
+        # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 2
+        submitter {
+            # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 2
+            enabled=true
+        }
+    }
+}
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 37
+syscoinhost {
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 37
+    url="192.168.0.132"
+}
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 34-36
+syscoinrpc {
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 35
+    password=999000
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 36
+    "url_and_port"="http://localhost:9904/"
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 34
+    user=chain
+}
+    # system properties
+sysethereum {
+    # system properties
+    agents {
+        # system properties
+        conf {
+            # system properties
+            file="/mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf"
+        }
+    }
+}
+    # system properties
+user {
+    # system properties
+    country=US
+    # system properties
+    dir="/mnt/ethereum/eth-contract/sysethereum-agents"
+    # system properties
+    home="/home/john"
+    # system properties
+    language=en
+    # system properties
+    name=john
+    # system properties
+    timezone="America/Los_Angeles"
+}
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 67
+withdraw {
+    # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 67
+    funds {
+        # /mnt/ethereum/eth-contract/sysethereum-agents/data/sysethereum-agents.conf: 67
+        enabled=true
+    }
+}
+
+22:27:20.296 [main] INFO  IntegrationAgentConstants - genesisSuperblock SuperblockData{merkleRoot=000004414319045a0e8c9c83726fe083191c49baafa478e1c04b6b1ab3b096c9, lastSyscoinBlockTime=1604479292, lastSyscoinBlockTimeMTP=1604479288, lastSyscoinBlockHash=000004414319045a0e8c9c83726fe083191c49baafa478e1c04b6b1ab3b096c9, lastSyscoinBlockBits=504365055, parentId=0000000000000000000000000000000000000000000000000000000000000000, superblockHeight=1}
+22:27:20.315 [main] INFO  org.bitcoinj.core.Context - Creating bitcoinj 0.15.5 context.
+22:27:20.446 [main] DEBUG MainConfiguration - mainWeb3jService: Set to: http://52.82.14.63:8745/
+22:27:23.537 [main] INFO  MailerFactory - Mailer is not enabled
+22:27:23.598 [main] INFO  Main - Running Sysethereum agents version: 1.0.0-RELEASE
+22:27:23.599 [main] DEBUG MainLifecycle - initialize: [Step #1]
+22:27:23.603 [main] DEBUG MainLifecycle - initialize: [Optional step] Start Syscoin wrapper
+22:27:23.608 [main] DEBUG SyscoinWrapper - About to start WalletAppKit
+22:27:23.610 [SyscoinWalletAppKit STARTING] INFO  org.bitcoinj.kits.WalletAppKit - Starting up with directory = /mnt/ethereum/vcl-eth/SyscoinWrapper
+22:27:23.881 [SyscoinWalletAppKit STARTING] INFO  org.bitcoinj.core.AbstractBlockChain - chain head is at height 12244:
+ block: 
+   hash: 00000003ec16e602bc170feaac9f615190cf661759a514130496be37fc27f64a
+   version: 268435460 (BIP34, BIP66, BIP65)
+   previous block: 000000196367190cb539446ddaec3a0461422ac85473b89a529f2faf3409868b
+   time: 1604902910 (2020-11-09T06:21:50Z)
+   difficulty target (nBits): 488361550
+   nonce: 190809271
+
+22:27:23.945 [SyscoinWalletAppKit STARTING] WARN  org.bitcoinj.core.AbstractBlockChain - Wallet/chain height mismatch: -1 vs 12244
+22:27:23.945 [SyscoinWalletAppKit STARTING] WARN  org.bitcoinj.core.AbstractBlockChain - Hashes: null vs 00000003ec16e602bc170feaac9f615190cf661759a514130496be37fc27f64a
+22:27:23.970 [PeerGroup Thread] INFO  org.bitcoinj.core.PeerGroup - Starting ...
+22:27:23.975 [PeerGroup Thread] INFO  org.bitcoinj.core.PeerGroup - Localhost peer detected, trying to use it instead of P2P discovery
+22:27:23.988 [PeerGroup Thread] INFO  org.bitcoinj.core.PeerGroup - Attempting connection to [127.0.0.1]:9903     (0 connected, 1 pending, 0 max)
+22:27:23.995 [NioClientManager] INFO  org.bitcoinj.net.NioClientManager - Connected to localhost/127.0.0.1:9903
+22:27:23.995 [NioClientManager] INFO  org.bitcoinj.core.Peer - Announcing to localhost/127.0.0.1:9903 as: /bitcoinj:0.15.5/
+22:27:23.999 [NioClientManager] INFO  org.bitcoinj.core.Peer - Peer{[127.0.0.1]:9903, version=70015, subVer=/Satoshi:4.1.2/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-11-08 22:27:23, height=12247}
+22:27:24.004 [NioClientManager] INFO  org.bitcoinj.core.PeerGroup - Peer{[127.0.0.1]:9903, version=70015, subVer=/Satoshi:4.1.2/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-11-08 22:27:23, height=12247}: New peer      (1 connected, 0 pending, 1 max)
+22:27:24.009 [NioClientManager] INFO  org.bitcoinj.core.PeerGroup - Setting download peer: Peer{[127.0.0.1]:9903, version=70015, subVer=/Satoshi:4.1.2/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-11-08 22:27:23, height=12247}
+22:27:24.011 [NioClientManager] INFO  org.bitcoinj.core.listeners.DownloadProgressTracker - Downloading block chain of size 3. 
+22:27:24.025 [NioClientManager] INFO  org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 33% done with 2 blocks to go, block date 2020-11-09T06:22:59Z
+22:27:24.027 [NioClientManager] INFO  org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 66% done with 1 blocks to go, block date 2020-11-09T06:24:01Z
+22:27:24.028 [NioClientManager] INFO  org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 100% done with 0 blocks to go, block date 2020-11-09T06:25:42Z
+22:27:24.031 [main] DEBUG SyscoinWrapper - WalletAppKit is running
+22:27:24.031 [main] DEBUG MainLifecycle - initialize: [Step #2]
+22:27:25.012 [PeerGroup Thread] INFO  org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - End of sync detected.
+22:27:25.523 [main] INFO  MainLifecycle - general.purpose.and.send.superblocks.address is unlocked and ready to use!
+22:27:25.523 [main] DEBUG MainLifecycle - initialize: [Step #3]
+22:27:25.525 [main] DEBUG MainLifecycle - initialize: [Step #4]
+22:27:25.526 [main] DEBUG MainLifecycle - initialize: [Step #5]
+22:27:25.535 [main] DEBUG MainLifecycle - initialize: [Step #6]
+22:27:25.536 [main] DEBUG MainLifecycle - initialize: Done
+22:27:26.524 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:27:29.026 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12247, date 2020-11-09T06:25:42Z, hash 00000013d7c0244240a9c1b96bca7b17cd83f7a454d442eca70406790facbe39
+22:27:29.067 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 39.32 ms
+22:27:45.686 [Syscoin to Eth client] INFO  EthWrapper - setting new min gas price to 20000000000
+22:27:51.158 [Syscoin to Eth client] INFO  EthWrapper - Superblock 481152458dc0ccf43b2714ff9403430878aa5378efed30b670ab1b1a0eb07e62 has already been sent. Returning.
+22:28:11.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:28:37.304 [Syscoin to Eth client] INFO  EthWrapper - Superblock 481152458dc0ccf43b2714ff9403430878aa5378efed30b670ab1b1a0eb07e62 has already been sent. Returning.
+22:28:56.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:28:58.376 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12248, date 2020-11-09T06:27:08Z, hash 0000000f43edc416ddeff9fc9e5ddfad8a4aee09c0d93c561a372acac49a81e6
+22:28:58.395 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 18.35 ms
+22:29:21.472 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12249, date 2020-11-09T06:28:53Z, hash 0000000694a69490493dfe92cbd7f435ccbc40e5b536759f650725bec0e76352
+22:29:21.480 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 7.546 ms
+22:29:26.459 [Syscoin to Eth client] INFO  EthWrapper - Superblock 481152458dc0ccf43b2714ff9403430878aa5378efed30b670ab1b1a0eb07e62 has already been sent. Returning.
+22:29:41.524 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:30:05.470 [Syscoin to Eth client] INFO  EthWrapper - Superblock 481152458dc0ccf43b2714ff9403430878aa5378efed30b670ab1b1a0eb07e62 has already been sent. Returning.
+22:30:26.524 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:30:50.854 [Syscoin to Eth client] INFO  EthWrapper - Superblock 481152458dc0ccf43b2714ff9403430878aa5378efed30b670ab1b1a0eb07e62 has already been sent. Returning.
+22:31:06.267 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12250, date 2020-11-09T06:29:16Z, hash 00000008dc142747062ebf526053b404246a75b91cecedde975a36eb14da8435
+22:31:06.273 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 5.000 ms
+22:31:11.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:31:38.655 [Syscoin to Eth client] INFO  EthWrapper - Superblock 481152458dc0ccf43b2714ff9403430878aa5378efed30b670ab1b1a0eb07e62 has already been sent. Returning.
+22:31:56.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:32:21.197 [Syscoin to Eth client] INFO  EthWrapper - Superblock 481152458dc0ccf43b2714ff9403430878aa5378efed30b670ab1b1a0eb07e62 has already been sent. Returning.
+22:32:30.232 [agents.superblock.SUBMITTER] INFO  SuperblockDefenderClient - Confirming superblock 481152458dc0ccf43b2714ff9403430878aa5378efed30b670ab1b1a0eb07e62
+22:32:33.227 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12251, date 2020-11-09T06:31:01Z, hash 0000000256958a4a6c85ccac68cc812fcee6fc9f009e48705b36b5c714424cc8
+22:32:33.231 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 4.408 ms
+22:32:41.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:32:46.563 [Thread-13] INFO  ClaimContractApi - checkClaimFinished receipt TransactionReceipt{transactionHash='0xb578a08c5fe00f3d8d17d85ff9cf81fbfd31d7c07a8e22bdd6ae8320e6746d77', transactionIndex='0x2', blockHash='0xe4c4a58e39876ffe29be71d1c38dac9af1099475e60643febfc756a935bee89d', blockNumber='0x72b0bf', cumulativeGasUsed='0x2a6d1', gasUsed='0x6cc4', contractAddress='null', root='null', status='0x1', from='0x602432cb3aeb6fdb53ab6bb57322f027db9c4853', to='0xbb4b768880120f1069409373cb5037df6ef57b9e', logs=[Log{removed=false, logIndex='0x4', transactionIndex='0x2', transactionHash='0xb578a08c5fe00f3d8d17d85ff9cf81fbfd31d7c07a8e22bdd6ae8320e6746d77', blockHash='0xe4c4a58e39876ffe29be71d1c38dac9af1099475e60643febfc756a935bee89d', blockNumber='0x72b0bf', address='0xbb4b768880120f1069409373cb5037df6ef57b9e', data='0x481152458dc0ccf43b2714ff9403430878aa5378efed30b670ab1b1a0eb07e62000000000000000000000000000000000000000000000000000000000000c3a0', type='null', topics=[0x94bc311f1c6f4ed382aae7a5df5a4917f0ef0289f84bad39fee69c943e85fa33]}], logsBloom='0x00000000000000000000010000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000'}
+22:33:26.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:34:11.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:34:50.444 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12252, date 2020-11-09T06:32:28Z, hash 0000001aa42251a6b947a7d93f24d57bfb96c4f9511f7d783db4149839128101
+22:34:50.448 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 3.981 ms
+22:34:56.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:35:36.384 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12253, date 2020-11-09T06:34:45Z, hash 00000009cb56f3687046ba66afcea9f852c04dba2e69229ff068b54e44cd3540
+22:35:36.389 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 4.452 ms
+22:35:41.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:36:26.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:37:11.524 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:37:15.638 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12254, date 2020-11-09T06:35:31Z, hash 0000000e8a86f999ac7e994aa1e3fabf8512e72af166583c37ec4f85f9694104
+22:37:15.643 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 4.970 ms
+22:37:30.267 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12255, date 2020-11-09T06:37:10Z, hash 0000000a541d5e5907318bdff69930a87a6eb78992bb0bb7debe9e55a6f6de08
+22:37:30.271 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 3.873 ms
+22:37:36.195 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12256, date 2020-11-09T06:37:25Z, hash 000000142037695e084ad3f913ea485cfc4b46d363353f4bd281f7cf797ede03
+22:37:36.200 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 4.271 ms
+22:37:56.524 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:38:41.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:39:26.524 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:40:11.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:40:56.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:41:23.453 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12257, date 2020-11-09T06:37:31Z, hash 0000001aaa22145d7990dbfe662c4e6881f085455d7a361ac98562ed84469e46
+22:41:23.457 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 3.946 ms
+22:41:41.524 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:42:26.524 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:43:11.524 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:43:14.455 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12258, date 2020-11-09T06:41:18Z, hash 000000042f61d12f167ac598567e00e5028c574cc6bc32748f3faf664fd4f8ad
+22:43:14.461 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 5.963 ms
+22:43:56.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:44:14.123 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12259, date 2020-11-09T06:43:09Z, hash 0000001b70ac373a829a8889f2670455120162527529405f31623787124002e1
+22:44:14.127 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 3.727 ms
+22:44:41.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:45:05.472 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12260, date 2020-11-09T06:44:09Z, hash 000000004573fc79691df9df8ec0cdafc6f85dac332f0a28df2e6ad612f61528
+22:45:05.478 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 5.425 ms
+22:45:26.524 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:45:31.506 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12261, date 2020-11-09T06:45:00Z, hash 000000103b571863f1d851d5d493f6fdcc34d8bfda46b6933e9a1c5961f0bb73
+22:45:31.511 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 4.547 ms
+22:46:11.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:46:56.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:47:41.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:48:17.087 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12262, date 2020-11-09T06:45:26Z, hash 00000011b6cbf7623602975bfdd75e864d654d4209dfd2d37bd4c932d4c1c8ca
+22:48:17.091 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 4.433 ms
+22:48:26.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:48:42.228 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12263, date 2020-11-09T06:48:11Z, hash 00000001b26749057450d304df82395c7b9c7a5ece856cbd8b2c3dcd9a8ca5ba
+22:48:42.232 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 3.260 ms
+22:48:56.007 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12264, date 2020-11-09T06:48:37Z, hash 00000013717dfe5be4336a77e14e33a77e496daa33fef44d7b45a8fd7d3cc099
+22:48:56.010 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 2.897 ms
+22:49:11.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:49:33.890 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12265, date 2020-11-09T06:48:50Z, hash 00000015c2dd4598467e04e92272ca2c43de5be26581000f6751c602ca36e1b2
+22:49:33.893 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 2.901 ms
+22:49:56.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:50:02.569 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12267, date 2020-11-09T06:49:57Z, hash 000000197fc6c984b1b311d21d2866f75917c53952c6e38998084fe8b41528d1
+22:50:02.573 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 4.151 ms
+22:50:41.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:51:11.959 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12268, date 2020-11-09T06:50:00Z, hash 0000001335ddf2a56020389aeb2983871865b6a9b60d751d88add867fb20b936
+22:51:11.962 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 2.546 ms
+22:51:26.524 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:52:00.289 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12269, date 2020-11-09T06:51:06Z, hash 000000098005f5772482ccd6b3c03defbe1a2bc116e7cebdffb01a2750511d2f
+22:52:00.292 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 2.566 ms
+22:52:11.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:52:56.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:53:10.485 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12270, date 2020-11-09T06:51:55Z, hash 0000000325051faa729e2bd3779284b13d37571e2d208225417000b7b0b87eac
+22:53:10.489 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 3.507 ms
+22:53:41.525 [SuperblockChainClient] DEBUG SuperblockChainClient - UpdateSuperblocksTimerTask
+22:53:43.638 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 12272, date 2020-11-09T06:53:38Z, hash 00000015633b82502501e6452c3f6530740fb383b955038a042d8962c68d6eca
+22:53:43.641 [Wallet autosave thread] INFO  org.bitcoinj.wallet.WalletFiles - Save completed in 3.207 ms

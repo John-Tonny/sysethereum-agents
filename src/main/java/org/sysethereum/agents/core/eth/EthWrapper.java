@@ -288,6 +288,10 @@ public class EthWrapper {
         }
         // if claim exists we check to ensure the superblock chain isn't "stuck" and can be re-approved to be built even if it exists
         if (claimContractApi.getClaimExists(superblock.getHash())) {
+            boolean allowed1 = claimContractApi.getClaimInvalid(superblock.getHash());
+            boolean allowed2 = claimContractApi.getClaimDecided(superblock.getHash());
+            String hhh = claimContractApi.getClaimSubmitter(superblock.getHash());
+
             boolean allowed = claimContractApi.getClaimInvalid(superblock.getHash())
                     && claimContractApi.getClaimDecided(superblock.getHash())
                     && !claimContractApi.getClaimSubmitter(superblock.getHash()).equalsIgnoreCase(account);
