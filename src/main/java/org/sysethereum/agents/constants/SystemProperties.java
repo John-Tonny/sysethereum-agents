@@ -146,6 +146,11 @@ public class SystemProperties {
         return getBooleanProperty("withdraw.funds.enabled", false);
     }
 
+    // john
+    public boolean isWeb3Parity() {
+        return getBooleanProperty("web3j.parity.mode", false);
+    }
+
     public long depositedFundsLimit() {
         return getLongProperty("deposited.funds.limit", 0);
     }

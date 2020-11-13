@@ -115,7 +115,13 @@ public class MainLifecycle {
             Admin admin = Admin.build(mainWeb3jService);
             String generalAddress = config.generalPurposeAndSendSuperblocksAddress();
             if (generalAddress.length() > 0) {
-                PersonalUnlockAccount personalUnlockAccount = admin.personalUnlockAccount(generalAddress, config.generalPurposeAndSendSuperblocksUnlockPW(), BigInteger.ZERO).send();
+                PersonalUnlockAccount personalUnlockAccount;
+                if (config.isWithdrawFundsEnabled()) {
+                    personalUnlockAccount = admin.personalUnlockAccount(generalAddress, config.generalPurposeAndSendSuperblocksUnlockPW(), null).send();
+                }else {
+                    personalUnlockAccount = admin.personalUnlockAccount(generalAddress, config.generalPurposeAndSendSuperblocksUnlockPW(), BigInteger.ZERO).send();
+                }
+
                 if (personalUnlockAccount != null && personalUnlockAccount.getResult() != null && personalUnlockAccount.accountUnlocked()) {
                     logger.info("general.purpose.and.send.superblocks.address is unlocked and ready to use!");
                 } else {
