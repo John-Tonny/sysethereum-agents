@@ -10,11 +10,12 @@ import org.sysethereum.agents.util.RestError;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 @Service
 @Slf4j(topic = "GetSyscoinRPCHandler")
-public class GetSyscoinRPCHandler extends CommonHttpHandler {
+public class GetSyscoinRPCHandler extends JsonHttpHandler {
 
     private final Gson gson;
     private final SyscoinRPCClient syscoinRPCClient;
@@ -25,12 +26,18 @@ public class GetSyscoinRPCHandler extends CommonHttpHandler {
     }
 
     @Override
+    @SuppressWarnings("unchecked")
     public void handle(HttpExchange httpExchange) throws IOException {
         HttpsExchange httpsExchange = (HttpsExchange) httpExchange;
         if (setOriginAndHandleOptionsMethod(httpsExchange)) return;
-
-        LinkedHashMap<String, String> params = queryToMap(httpsExchange.getRequestURI().getQuery());
         String response;
+        Map<String, String> params;
+
+        if (isMatchedApplicationJson(httpsExchange.getRequestHeaders())) {
+            params = (Map<String, String>) (Object) getParams(httpsExchange);
+        } else {
+            params = queryToMap(httpsExchange.getRequestURI().getQuery());
+        }
         try {
             String method = params.get("method");
             params.remove("method");
@@ -38,7 +45,7 @@ public class GetSyscoinRPCHandler extends CommonHttpHandler {
                 String hexstring = params.get("hexstring");
                 String privkey = params.get("privkeys");
                 String[] split = privkey.split(",");
-                ArrayList<String> privkeList = new ArrayList<String>();
+                List<String> privkeList = new ArrayList<>();
                 for (String s : split) {
                     privkeList.add(s);
                 }
