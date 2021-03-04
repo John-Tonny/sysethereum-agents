@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.sysethereum</groupId>
-    <artifactId>sysethereum-agents</artifactId>
+    <groupId>info.vircletrx</groupId>
+    <artifactId>vircletrx-agents</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
@@ -64,7 +64,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.sysethereum.agents.Main</mainClass>
+                            <mainClass>info.vircletrx.agents.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -74,7 +74,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <configuration>
-                    <mainClass>org.sysethereum.agents.Main</mainClass>
+                    <mainClass>info.vircletrx.agents.Main</mainClass>
                 </configuration>
             </plugin>
             <plugin>
@@ -96,7 +96,7 @@
                             <archive>
                                 <manifest>
                                     <mainClass>
-                                        org.sysethereum.agents.Main
+                                        info.vircletrx.agents.Main
                                     </mainClass>
                                 </manifest>
                             </archive>
@@ -154,7 +154,7 @@
         <dependency>
             <groupId>org.libdohj</groupId>
             <artifactId>libdohj-core</artifactId>
-            <version>0.15.32-R</version>
+            <version>0.15.33-R</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -236,6 +236,26 @@
             <version>3.1.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.tron.tronj</groupId>
+            <artifactId>abi</artifactId>
+            <version>0.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.tron.tronj</groupId>
+            <artifactId>client</artifactId>
+            <version>0.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.tron.tronj</groupId>
+            <artifactId>utils</artifactId>
+            <version>0.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.konghq</groupId>
+            <artifactId>unirest-java</artifactId>
+            <version>3.11.09</version>
+        </dependency>
     </dependencies>
 
     <repositories>
@@ -254,6 +274,11 @@
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
             </snapshots>
+        </repository>
+        <repository>
+            <id>nexus</id>
+            <name>Nexus</name>
+            <url>https://dl.bintray.com/tronj/tronj</url>
         </repository>
     </repositories>
 </project>

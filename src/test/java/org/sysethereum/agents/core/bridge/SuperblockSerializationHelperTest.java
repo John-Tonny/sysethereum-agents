@@ -1,11 +1,11 @@
-package org.sysethereum.agents.core.bridge;
+package info.vircletrx.agents.core.bridge;
 
 import com.google.common.io.BaseEncoding;
 import org.bitcoinj.core.Sha256Hash;
 import org.junit.jupiter.api.Test;
-import org.libdohj.params.SyscoinRegTestParams;
-import org.sysethereum.agents.core.syscoin.Keccak256Hash;
-import org.sysethereum.agents.service.rest.MerkleRootComputer;
+import org.libdohj.params.VircleRegTestParams;
+import info.vircletrx.agents.core.vircle.Keccak256Hash;
+import info.vircletrx.agents.service.rest.MerkleRootComputer;
 
 import java.util.ArrayList;
 
@@ -35,7 +35,7 @@ class SuperblockSerializationHelperTest {
         hashes.add(Sha256Hash.wrap(SYS_HASH_3));
 
         SuperblockData data = new SuperblockData(
-                MerkleRootComputer.computeMerkleRoot(SyscoinRegTestParams.get(), hashes),
+                MerkleRootComputer.computeMerkleRoot(VircleRegTestParams.get(), hashes),
                 hashes,
                 1562016306,
                 1562016306,
@@ -58,12 +58,12 @@ class SuperblockSerializationHelperTest {
 
         SuperblockData data = underTest.fromBytes(bytes);
         assertEquals(0, data.superblockHeight);
-        assertEquals(1562016306, data.lastSyscoinBlockTime);
-        assertEquals(0, data.lastSyscoinBlockBits);
+        assertEquals(1562016306, data.lastVircleBlockTime);
+        assertEquals(0, data.lastVircleBlockBits);
         assertEquals(Keccak256Hash.ZERO_HASH, data.parentId);
-        assertEquals(3, data.syscoinBlockHashes.size());
-        assertEquals(SYS_HASH_1, data.syscoinBlockHashes.get(0).toString());
-        assertEquals(SYS_HASH_2, data.syscoinBlockHashes.get(1).toString());
-        assertEquals(SYS_HASH_3, data.syscoinBlockHashes.get(2).toString());
+        assertEquals(3, data.vircleBlockHashes.size());
+        assertEquals(SYS_HASH_1, data.vircleBlockHashes.get(0).toString());
+        assertEquals(SYS_HASH_2, data.vircleBlockHashes.get(1).toString());
+        assertEquals(SYS_HASH_3, data.vircleBlockHashes.get(2).toString());
     }
 }

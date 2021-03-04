@@ -1,4 +1,4 @@
-package org.sysethereum.agents.core.eth;
+package info.vircletrx.agents.core.eth;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -8,7 +8,7 @@ import org.web3j.abi.datatypes.Address;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(MockitoExtension.class)
-class EthWrapperTest {
+class TrxWrapperTest {
 
     @Test
     void test_AddressComparison() {

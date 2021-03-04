@@ -1,8 +1,8 @@
-package org.sysethereum.agents.service.rest;
+package info.vircletrx.agents.service.rest;
 
 import org.bitcoinj.core.Sha256Hash;
 import org.junit.jupiter.api.Test;
-import org.libdohj.params.SyscoinRegTestParams;
+import org.libdohj.params.VircleRegTestParams;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -20,7 +20,7 @@ class MerkleRootComputerTest {
 
     @Test
     void computeMerkleRoot_lib() {
-        SyscoinRegTestParams params = SyscoinRegTestParams.get();
+        VircleRegTestParams params = VircleRegTestParams.get();
         var hashes = List.of(h1, h2, h3);
         Sha256Hash underTest = MerkleRootComputer.computeMerkleRoot(params, hashes);
         assertEquals(EXPECTED_MERKLE_ROOT, underTest.toString());

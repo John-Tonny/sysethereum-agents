@@ -1,11 +1,11 @@
-package org.sysethereum.agents.service;
+package info.vircletrx.agents.service;
 
 import org.junit.jupiter.api.Test;
 import org.simplejavamail.MailException;
 import org.simplejavamail.email.Email;
 import org.simplejavamail.mailer.Mailer;
-import org.sysethereum.agents.constants.SystemProperties;
-import org.sysethereum.agents.core.syscoin.Keccak256Hash;
+import info.vircletrx.agents.constants.SystemProperties;
+import info.vircletrx.agents.core.vircle.Keccak256Hash;
 
 import javax.mail.AuthenticationFailedException;
 import java.util.List;

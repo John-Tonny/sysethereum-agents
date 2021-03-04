@@ -1,8 +1,8 @@
-package org.sysethereum.agents.core;
+package info.vircletrx.agents.core;
 
 import org.junit.jupiter.api.Test;
-import org.sysethereum.agents.core.syscoin.Keccak256Hash;
-import org.sysethereum.agents.service.PersistentFileStore;
+import info.vircletrx.agents.core.vircle.Keccak256Hash;
+import info.vircletrx.agents.service.PersistentFileStore;
 
 import java.io.*;
 import java.util.HashSet;

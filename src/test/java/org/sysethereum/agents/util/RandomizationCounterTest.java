@@ -1,4 +1,4 @@
-package org.sysethereum.agents.util;
+package info.vircletrx.agents.util;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
