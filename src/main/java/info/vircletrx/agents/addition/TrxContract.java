@@ -132,14 +132,8 @@ public class TrxContract {
     }
 
     protected TransactionReturn executeTransaction(Function function, BigInteger weiValue) {
-        /*TransactionBuilder trnExt = this.client.triggerCall(this.ownerAddress, this.contractAddress, function);
-        Transaction unsignedTxn = trnExt.getTransaction().toBuilder()
-                .setRawData(trnExt.getTransaction().getRawData().toBuilder().setFeeLimit(10000000L))
-                .build();
-
-         */
-
         String encodedHex = FunctionEncoder.encode(function);
+
 
         TriggerSmartContract trigger = TriggerSmartContract.newBuilder()
                 .setOwnerAddress(TronClient.parseAddress(this.ownerAddress))
@@ -148,14 +142,17 @@ public class TrxContract {
                 .setData(TronClient.parseHex(encodedHex))
                 .build();
 
+        // john 20210427
         TransactionExtention txnExt = this.client.triggerContract(trigger);
 
         Transaction unsignedTxn = txnExt.getTransaction().toBuilder()
                  .setRawData(txnExt.getTransaction().getRawData().toBuilder().setFeeLimit(100000000L))
                  .build();
+
         Transaction signedTxn = this.client.signTransaction(unsignedTxn);
 
         return this.client.broadcastTransaction(signedTxn);
+
     }
 
     public TransactionReturn executeRemoteCallTransaction(Function function) {

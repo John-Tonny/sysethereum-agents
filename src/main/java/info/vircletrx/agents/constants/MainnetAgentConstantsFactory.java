@@ -27,12 +27,12 @@ public class MainnetAgentConstantsFactory {
         var vircleToTrxTimerTaskPeriod = 45 * 1000;
         var vircleToTrxTimerTaskPeriodAggressive = 5 * 1000;
 
-        List<Sha256Hash> sysHashes = List.of(Sha256Hash.wrap("00000eab5895cca2b698efe3c9cdb09259fdb7464500500f78d70df3f640f469"));  //blockhash
+        List<Sha256Hash> sysHashes = List.of(Sha256Hash.wrap("000000063641b06c817dad903ac321cbe7be182b196dc94786e263b12fc289d6"));  //blockhash
 
         var genesisSuperblock = new SuperblockData(
                 MerkleRootComputer.computeMerkleRoot(vircleParams, sysHashes),
                 sysHashes,
-                1611979096, 1611979094, 504365055,
+                1619433428, 1619432883, 487029343,
                 Keccak256Hash.wrap(new byte[32]), // initialised with 0s
                 1
         );

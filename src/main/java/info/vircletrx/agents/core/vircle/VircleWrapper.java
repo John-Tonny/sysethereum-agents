@@ -50,14 +50,20 @@ public class VircleWrapper {
         //    kit.setPeerNodes(peerAddresses.toArray(new PeerAddress[]{}));
         //}
         NetworkParameters networkParams = this.vircleContext.getParams();
+        // john
         String ip="68.79.34.218";
+        if(networkParams.getDnsSeeds().length > 0){
+            ip = networkParams.getDnsSeeds()[1];
+        }
         String[] ii=ip.split("\\.");
         byte[] ips=new byte[4];
         for(int i=0;i<4;i++){
             ips[i]=(byte)(Integer.parseInt(ii[i]));
         }
+        int port = networkParams.getPort();
+
         try {
-            PeerAddress peerAddress = new PeerAddress(networkParams, InetAddress.getByAddress("self.info.vircles", ips), 9804);
+            PeerAddress peerAddress = new PeerAddress(networkParams, InetAddress.getByAddress("self.info.vircles", ips), port);
             kit.setPeerNodes(peerAddress);
         }catch(UnknownHostException e){
         }

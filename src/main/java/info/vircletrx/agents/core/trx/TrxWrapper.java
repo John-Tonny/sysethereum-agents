@@ -226,8 +226,8 @@ public class TrxWrapper {
             return null;
         }
 
-        Superblock sb = localSuperblockChain.getByHeight(150);
-        //Superblock sb = localSuperblockChain.getChainHead();
+        // Superblock sb = localSuperblockChain.getByHeight(150);          // john
+        Superblock sb = localSuperblockChain.getChainHead();
         while (sb != null &&
                 !sb.getHash().equals(bestContractSuperblockId) &&
                 !newAndTimeoutPassed(sb.getHash()) &&
@@ -263,8 +263,8 @@ public class TrxWrapper {
             return null;
         }
 
-        Superblock head = localSuperblockChain.getByHeight(150);
-        //Superblock head = localSuperblockChain.getChainHead();
+        // Superblock head = localSuperblockChain.getByHeight(150);  // john
+        Superblock head = localSuperblockChain.getChainHead();
         BigInteger status = superblockContractApi.getStatus(head.getHash());                // john
         while (head != null
                 && !head.getHash().equals(superblockId)

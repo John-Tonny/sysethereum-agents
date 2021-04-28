@@ -37,7 +37,9 @@ public class OperatorPeersChecker {
     public void setup() {
         int defaultPort = agentConstants.getVircleParams().getPort();
         // List<String> peerStrings = List.of("127.0.0.1");
-        List<String> peerStrings = List.of("68.79.34.218:9804");
+        // List<String> peerStrings = List.of("68.79.34.218:9804");
+        // List<String> peerStrings = List.of(agentConstants.getVircleParams().getDnsSeeds()[0] + ":" +String.valueOf(defaultPort));
+        List<String> peerStrings = List.of(agentConstants.getVircleParams().getDnsSeeds());
         List<PeerAddress> peerAddresses;
 
         try {

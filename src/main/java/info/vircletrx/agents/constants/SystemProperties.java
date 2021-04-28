@@ -127,7 +127,7 @@ public class SystemProperties {
     }
 
     public String vircleRPCURL() {
-        return getStringProperty("virclerpc.url_and_port", "http://localhost:8370/");
+        return getStringProperty("virclerpc.url_and_port", "http://localhost:9142/");
     }
 
     public long gasPriceMinimum() {
